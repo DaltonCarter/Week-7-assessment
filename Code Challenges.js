@@ -15,7 +15,7 @@ const sumZero = (arr) => {
     return false
 }
 
-// O(n^2)
+// O(n2)
 
 
 // 2) Unique Characters
@@ -32,7 +32,7 @@ const uniqueCharacters = (str) => {
     return true
 }
 
-//Time: O(n^2)
+//Time: O(n2)
 
 // 3) Pangram Sentence
 
@@ -49,6 +49,7 @@ const pangram = (str) => {
     }
     return true
 }
+
 
 //O(n)
 

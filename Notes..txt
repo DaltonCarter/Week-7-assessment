@@ -9,7 +9,8 @@ X-Large array       |     1.1182535 s                            18.5287 ms
 
     I have no idea how I'm going to make this a paragraph, but here it goes. For starters the Unshift function 
     starts off twice as fast as the push function, until you get to the Medium sized array, where the appending is slightly faster, 
-    and then by the time you reach the extra large array it's completely flipped. I belive this is because the ratio of information being
+    and then by the time you reach the extra large array it's completely flipped. At first appen takes over 100ms more than insert, but by the end
+    it only takes 18~ms, vs inserts over 1 s. I belive this is because the ratio of information being
     changed has grown too large for the unshift to be practical. When you add with this method you have to change the values of EVERY
     other item in the array, to account for something being injected into the front of the array. Where with push you are only EVERY
     altering the END of the array. Changing everything AND adding something new VS. Finding the end and adding something new there.
